@@ -40,7 +40,7 @@ public class omtrekBerekenenEindversie {
         String gebruikersKeuze;
         double inputLengte;
         double inputBreedte;
-
+        double inputStraal;
 
         // input ophalen
         Scanner input = new Scanner(System.in);
@@ -50,7 +50,7 @@ public class omtrekBerekenenEindversie {
         gebruikersKeuze = cirkelOfVierkant();
         System.out.println("Je hebt gekozen voor een: " + gebruikersKeuze);
 
-        // communicatie rondom uitrekenen vierkant
+        // communicatie rondom uitrekenen cirkel of vierkant inclusief foutmelding
         if(Objects.equals(gebruikersKeuze, "vierkant")){
             double resultaatOppervlakteVierkant;
 
@@ -61,11 +61,17 @@ public class omtrekBerekenenEindversie {
 
             resultaatOppervlakteVierkant = oppervlakteVierkantBerekening(inputLengte,inputBreedte);
             System.out.println("De oppervlakte van je vierkant is: " + resultaatOppervlakteVierkant);
+        } else if (Objects.equals(gebruikersKeuze, "cirkel")){
+            double resultaatOppervlakteCirkel;
+
+            System.out.println("voer de straal van je cirkel in");
+            inputStraal = input.nextDouble();
+
+            resultaatOppervlakteCirkel = oppervlakteCirkelBerekening(inputStraal);
+            System.out.println("De oppervlakte van je cirkel is: " + resultaatOppervlakteCirkel);
         } else {
             System.out.println("Input is invalide");
         }
-
-
 
     }
 
