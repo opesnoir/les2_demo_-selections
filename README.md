@@ -37,3 +37,5 @@ In het nederlands:
 6. test: (toevoegen van ontbrekende tests, refactoring van tests; geen wijziging in productiecode)
 7. chore: (bijwerken van grunttaken, enz .; geen wijziging in productiecode)
 
+Math klasse
+Methode zijn functies die een specifieke taak uitvoeren

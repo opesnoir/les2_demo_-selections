@@ -11,8 +11,10 @@ public class switchstatmentMetWoorden {
 
         // maak een variabel om de waarde die de gebruiker invoert in op te bergen
         String ingevoerdeKeuze = gebruikersInvoer.nextLine(); // om een string op te halen gebruik je nextLine();
-
-        switch (ingevoerdeKeuze) {
+        //.toLowerCase pakt de variabele en maakt er kleine letters van, dan kan iemand zowel Mars als mars zeggen
+        // je geeft de variabele een extra taak doen
+        switch (ingevoerdeKeuze.toLowerCase()) {
+            //na case geef je aan welke waarde er wordt verwacht, als het een string is dan doe je dat in de " "
             case "mars":
                 System.out.println("Je krijgt een mars.");
                 break;
