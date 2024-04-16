@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class swithchStatements {
+public class switchStatements {
     public static void main(String[] args) {
         //initieer scanner: Scanner scannerNaam = new Scanner(System.in);
         Scanner gebruikersInvoer = new Scanner(System.in);
