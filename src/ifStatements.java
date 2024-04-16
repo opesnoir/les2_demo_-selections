@@ -23,7 +23,7 @@ public class ifStatements {
         }
 
         // if else statement
-        // je vraagt is het opgegeven getal deelbaar is door het getal 2
+        // is er een restwaarde als ik het getal deel door twee, daarmee kan je kijken of je met een even of oneven getal te maken hebt
         if (getal % 2 == 0){
             System.out.println("het getal is even");
         } else {
